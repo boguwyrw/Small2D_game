@@ -5,6 +5,8 @@ namespace small.game2D
 {
     public class Enemy : Character, CharacterMovement
     {
+        [SerializeField] private CircleCollider2D enemyCol;
+
         private int _minRandom = 0;
         private int _maxRandom = 100;
         private float _minTimeRandom = 0.5f;
@@ -13,6 +15,7 @@ namespace small.game2D
         private float _moveY;
         private float _randomTimeX;
         private float _randomTimeY;
+        private bool _canRun = true;
 
         protected override void Start()
         {
@@ -24,7 +27,8 @@ namespace small.game2D
 
         protected override void Update()
         {
-            Movement();
+            if (_canRun)
+                Movement();
         }
 
         protected override void LateUpdate()
@@ -54,6 +58,12 @@ namespace small.game2D
         {
             transform.Translate(Vector3.right * _moveX * characterSpeed * Time.deltaTime);
             transform.Translate(Vector3.up * _moveY * characterSpeed * Time.deltaTime);
+        }
+
+        public void EnemyCaught()
+        {
+            _canRun = false;
+            enemyCol.enabled = false;
         }
 
         private IEnumerator Co_RandomDirectionX()

@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 542063727372544753, guid: 8e8c47b1219a5414f92c1f24cf0f300a, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6246552945666704438, guid: 8e8c47b1219a5414f92c1f24cf0f300a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -90,6 +94,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   characterSprite: {fileID: 8512697744144633553}
+  enemyCol: {fileID: 8502137141164861478}
+--- !u!58 &8502137141164861478 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 6895088169340006865, guid: 8e8c47b1219a5414f92c1f24cf0f300a, type: 3}
+  m_PrefabInstance: {fileID: 3048354788640758263}
+  m_PrefabAsset: {fileID: 0}
 --- !u!212 &8512697744144633553 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 6660476371099817766, guid: 8e8c47b1219a5414f92c1f24cf0f300a, type: 3}

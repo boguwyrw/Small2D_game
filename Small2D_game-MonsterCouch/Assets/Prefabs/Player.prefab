@@ -67,6 +67,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 542063727372544753, guid: 8e8c47b1219a5414f92c1f24cf0f300a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1249576287637536164}
+    - targetCorrespondingSourceObject: {fileID: 542063727372544753, guid: 8e8c47b1219a5414f92c1f24cf0f300a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7469690105186834864}
   m_SourcePrefab: {fileID: 100100000, guid: 8e8c47b1219a5414f92c1f24cf0f300a, type: 3}
 --- !u!212 &1443199928881713993 stripped
 SpriteRenderer:
@@ -91,3 +94,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::small.game2D.Player
   characterSprite: {fileID: 1443199928881713993}
+--- !u!114 &7469690105186834864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5759058692938837662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 402a0e02154a7e243a9be8d9d10ea450, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FindEnemy
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 128
